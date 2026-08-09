@@ -1,54 +1,54 @@
-plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
-}
+targetCompatibility JavaVersion。VERSION_17VERSION_17
+插安卓.应用)插件。安卓.应用)
+    alias(libs.插件.科特林.安卓)插件。科特林.安卓)
+    }
 
-android {
-    namespace 'com.stand.sounder_template'
-    compileSdk 36
+Android{
+    namespace 'com.stand.sounder_template''com.stand.sounder_template'
+compileSdk3636
 
     defaultConfig {
-        applicationId "com.stand.sounder.template"
-        minSdk 23
-        targetSdk 36
-        versionCode 1
-        versionName "1.0"
+应用程序ID"com.stand.sounder.template""com.stand.sounder.hdhkk"
+minSdk2323
+targetSdk3636
+版本码11
+VersionName“1.0”"1.0"
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner""androidx.test.runner.AndroidJUnitRunner"
     }
 
     signingConfigs {
         release {
-            storeFile file("public.keystore")
-            storePassword "public"
-            keyAlias "public"
-            keyPassword "public"
+storeFile文件(“公共。密钥库”)"public.keystore")
+            storePassword "public""public"
+            keyAlias "public""public"
+            keyPassword "public""public"
         }
     }
 
     buildTypes {
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.release
+minifyEnabled假false
+proguardFiles getDefaultProguardFile(proguard-android-timestize。文本')，'程序规则。赞成''程序-安卓-优化。文本'), 'Proguard规则。赞成'
+signingConfig signingConfigs。释放释放
         }
     }
 
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
+    androidTestImplementation libs.
+sourceCompatibilityJavaVersion。版本_17版本_17
+core
     }
 
     kotlinOptions {
-        jvmTarget = "17"
+        jvmTarget = "17""17"
     }
-}
+    }
 
 dependencies {
-    implementation libs.androidx.core.ktx
-    implementation libs.androidx.appcompat
-    implementation libs.material
-    testImplementation libs.junit
-    androidTestImplementation libs.androidx.junit
-    androidTestImplementation libs.androidx.espresso.core
-}
+实现libs.androidx.核心.ktxandroidx.核心.ktx
+实现libs.androidx.appcompatandroidx.appcompat
+实现libs.材料材料
+testImplementation库.junitjunit
+androidTestImplementation库。androidx.junitandroidx.junit
+androidTestImplementation库。androidx。浓缩咖啡.coreandroidx.浓缩咖啡.核心
+    }
